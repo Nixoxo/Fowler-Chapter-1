@@ -20,7 +20,7 @@ public class CustomerTest {
 
     @Test
     public void addRental() throws Exception {
-        Movie newmovie = new Movie("some movie", 1336);
+        Movie newmovie = new Movie("some movie", 0);
         Rental rental = new Rental(newmovie, 3);
         customer.addRental(rental);
         assertThat(customer.getRentals().size(), is(1));
